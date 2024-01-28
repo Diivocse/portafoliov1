@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: content-box;
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #1c232e;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cont-main{    
+    display: flex;
+
+    
+    width: 140vh;
+    height: 100vh;
+
+    padding: 8% 0 0 0;
+}
+
+
+/* Apartado para el costado izquierdo */
+
+.costado-iz{
+
+    color: aliceblue;
+    font-weight: 400;
+
+    width: 60%;
+}
+
+.cont-main-title{
+    font-size: 50px;
+}
+
+.cont-main-p{
+    color:#53ac59;
+}
+
+.icon-list{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    padding: 5% 0 0 0;
+
+}
+
+.icon{
+    width: 45px;
+    filter: brightness(0) saturate(100%) invert(16%) sepia(79%) saturate(1639%) hue-rotate(157deg) brightness(93%) contrast(98%);
+    padding: 0 10px 0 0;
+    transition: 400ms ease-in;
+}
+
+.icon:hover{
+    transform: scale(1.06);
+    width: 45px;
+    filter: brightness(0) saturate(100%) invert(61%) sepia(51%) saturate(457%) hue-rotate(74deg) brightness(86%) contrast(87%);
+
+    
+}
+
+/* Apartado para el costado derecho */
+
+.costado-de{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    flex-direction: column;
+    
+    color: aliceblue;
+    font-weight: 400;
+    text-align: justify;
+
+    width: 100%;
+}
+
+/* Apartado para las tarjetas */
+.card{
+    padding: 2% 2% 2% 2%;
+    border-radius: 5px 5px 5px 5px;
+    
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0 0 0;
+
+    width: auto;
+
+    transition: 400ms;
+}
+
+.card:hover{
+    background-color: rgb(42, 51, 64);  
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.fecha{
+    padding: 0 20px 0 0;
+
+    font-weight: 600;
+
+    color: #53ac59;
+}
+
+.cont-etiqueta{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 3%;
+}
+
+.etiqueta{
+    text-align: center;
+    
+    border: #53ac59;
+
+    border-radius: 20px 20px 20px 20px;
+    background-color: #03484c;
+    color: #53ac59;
+
+    width: auto;
+    padding: 1.5% 5%;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+
+    text-transform: uppercase;
+}
